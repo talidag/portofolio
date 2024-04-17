@@ -1,5 +1,6 @@
 import "./Hero.scss";
 import heroVector from "../../../assets/hero-vector.svg";
+import heroImg from "../../../assets/hero-img.png";
 
 const Hero = () => {
   const otherJobs = [
@@ -42,6 +43,7 @@ const Hero = () => {
           <button className="btn-el media">Linkedin</button>
         </div>
       </div>
+      <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />
     </main>
   );
 };

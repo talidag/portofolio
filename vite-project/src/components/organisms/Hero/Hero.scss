@@ -2,13 +2,13 @@
 
 .hero-vector {
     position: absolute;
-    top: -45rem;
-    right: -5rem;
+    top: -15rem;
+    right: 0;
     z-index: -3;
-    transform: scale(1.2);
 }
 
 main {
+    position: relative;
     padding: 17.4rem 0 12.8rem 8rem;
 }
 
@@ -23,7 +23,7 @@ main {
         gap: 2.4rem;
 
         & p {
-            font-size: 2.4rem;
+            font-size: 2rem;
             letter-spacing: 1.4px;
 
             & span {
@@ -109,7 +109,7 @@ main {
 }
 
 .btn-el {
-    padding: 1.6rem 4rem;
+    padding: 1.6rem 3.2rem;
     text-transform: uppercase;
     border-radius: 2.4rem;
     font-size: 1.8rem;
@@ -129,4 +129,10 @@ main {
     &.media {
         background: none;
     }
+}
+
+.main-img {
+    position: absolute;
+    top: 13.5rem;
+    right: 7rem;
 }
