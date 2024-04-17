@@ -37,6 +37,10 @@ const Hero = () => {
             </div>
           </p>
         </div>
+        <div className="main-left__buttons">
+          <button className="btn-el connect">Let's Connect</button>
+          <button className="btn-el media">Linkedin</button>
+        </div>
       </div>
     </main>
   );
