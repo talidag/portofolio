@@ -1,0 +1,104 @@
+@import "../../../scss/variables";
+
+.hero-vector {
+    position: absolute;
+    top: -45rem;
+    right: -5rem;
+    z-index: -3;
+    transform: scale(1.2);
+}
+
+main {
+    padding: 17.4rem 0 12.8rem 8rem;
+}
+
+.other-job {
+    transition: all 1s ease-out;
+}
+
+.main {
+    &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        & p {
+            font-size: 2.4rem;
+            letter-spacing: 1.4px;
+
+            & span {
+                font-weight: 600;
+            }
+        }
+
+        & h1 {
+            font-size: 6rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.other-job {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+
+    &__p {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+        padding-top: 1.4rem;
+    }
+
+    &__container {
+        -webkit-animation-name: change;
+        -webkit-animation-duration: 16s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+
+        &__item {
+            line-height: 40px;
+        }
+    }
+}
+
+@keyframes change {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    12.5%,
+    25% {
+        transform: translate3d(0, -12.5%, 0);
+    }
+    25%,
+    37.5% {
+        transform: translate3d(0, -25%, 0);
+    }
+    37.5%,
+    50% {
+        transform: translate3d(0, -37.5%, 0);
+    }
+    50%,
+    62.5% {
+        transform: translate3d(0, -50%, 0);
+    }
+    62.5%,
+    75% {
+        transform: translate3d(0, -62.5%, 0);
+    }
+    75%,
+    87.5% {
+        transform: translate3d(0, -75%, 0);
+    }
+    87.5%,
+    99.9% {
+        transform: translate3d(0, -87.5%, 0);
+    }
+    99.9%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
