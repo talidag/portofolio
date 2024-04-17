@@ -35,6 +35,11 @@ main {
             font-size: 6rem;
             font-weight: 600;
         }
+
+        &__buttons {
+            display: flex;
+            gap: 2.4rem;
+        }
     }
 }
 
@@ -100,5 +105,28 @@ main {
     99.9%,
     100% {
         transform: translate3d(0, 0, 0);
+    }
+}
+
+.btn-el {
+    padding: 1.6rem 4rem;
+    text-transform: uppercase;
+    border-radius: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    &.connect {
+        background-color: $yellow;
+        border: none;
+
+        &:hover {
+            background-color: #777777;
+            color: $white;
+        }
+    }
+
+    &.media {
+        background: none;
     }
 }
