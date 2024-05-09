@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.hero-vector {
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  z-index: -3;
+}
+
+main {
+  position: relative;
+  padding: 17.4rem 0 12.8rem 8rem;
+}
+
+.other-job {
+  transition: all 1s ease-out;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.main-left p {
+  font-size: 2rem;
+  letter-spacing: 1.4px;
+}
+.main-left p span {
+  font-weight: 600;
+}
+.main-left h1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+.main-left__buttons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.other-job {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+}
+.other-job__p {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding-top: 1.4rem;
+}
+.other-job__container {
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+.other-job__container__item {
+  line-height: 40px;
+}
+
+@keyframes change {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  12.5%, 25% {
+    transform: translate3d(0, -12.5%, 0);
+  }
+  25%, 37.5% {
+    transform: translate3d(0, -25%, 0);
+  }
+  37.5%, 50% {
+    transform: translate3d(0, -37.5%, 0);
+  }
+  50%, 62.5% {
+    transform: translate3d(0, -50%, 0);
+  }
+  62.5%, 75% {
+    transform: translate3d(0, -62.5%, 0);
+  }
+  75%, 87.5% {
+    transform: translate3d(0, -75%, 0);
+  }
+  87.5%, 99.9% {
+    transform: translate3d(0, -87.5%, 0);
+  }
+  99.9%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.btn-el {
+  padding: 1.6rem 3.2rem;
+  text-transform: uppercase;
+  border-radius: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.btn-el.connect {
+  background-color: #ffc637;
+  border: none;
+}
+.btn-el.connect:hover {
+  background-color: #777777;
+  color: #ffffff;
+}
+.btn-el.media {
+  background: none;
+}
+
+.main-img {
+  position: absolute;
+  top: 13.5rem;
+  right: 7rem;
+}/*# sourceMappingURL=Hero.css.map */

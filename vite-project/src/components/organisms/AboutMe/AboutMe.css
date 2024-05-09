@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  padding: 17.6rem 28rem;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 26px;
+  letter-spacing: 0.6px;
+}/*# sourceMappingURL=AboutMe.css.map */
