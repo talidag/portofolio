@@ -39,8 +39,22 @@ const Hero = () => {
           </p>
         </div>
         <div className="main-left__buttons">
-          <button className="btn-el connect">Let's Connect</button>
-          <button className="btn-el media">Linkedin</button>
+          <button
+            className="btn-el connect"
+            onClick={() =>
+              window.location.assign(
+                "mailto:talida.ganciu@gmail.com?subject=Let's connect!"
+              )
+            }
+          >
+            Let's Connect
+          </button>
+          <a
+            href="https://www.linkedin.com/in/mihaela-talida-g-66532716a/"
+            target="_blank"
+          >
+            <button className="btn-el media">Linkedin</button>
+          </a>
         </div>
       </div>
       <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />

@@ -4,11 +4,12 @@ interface ProjectElProps {
   name: string;
   img: string;
   text: string;
+  link: string;
 }
-const ProjectEl = ({ name, img, text }: ProjectElProps) => {
+const ProjectEl = ({ name, img, text, link }: ProjectElProps) => {
   return (
     <div className="project">
-      <a href="">
+      <a href={link} target="_blank">
         <img src={img} alt="" />
       </a>
       <p className="project__name">{name}</p>

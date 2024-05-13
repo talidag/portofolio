@@ -4,7 +4,7 @@ import Navbar from "../../molecules/Navbar";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <a href="">
         <img src={logo} alt="Talida Ganciu logo" />
       </a>

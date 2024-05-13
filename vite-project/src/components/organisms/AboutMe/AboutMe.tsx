@@ -3,7 +3,7 @@ import "./AboutMe.scss";
 
 const AboutMe = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <HeadingEl number={2} text="About Me" />
       <div className="about__text">
         <p>Hey there!</p>

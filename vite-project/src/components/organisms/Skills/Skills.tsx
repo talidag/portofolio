@@ -59,7 +59,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <HeadingEl number={3} text="Skills" />
       <p>The skills, tools and technologies I use to bring projects to life</p>
       <div className="skills__list">

@@ -1,14 +1,7 @@
 import NavEl from "../atoms/NavEl";
 
 const Navbar = () => {
-  const links = [
-    "Home",
-    "About",
-    "Skills",
-    "Projects",
-    "Testimonials",
-    "Contact",
-  ];
+  const links = ["Home", "About", "Skills", "Projects", "Contact"];
   return (
     <nav>
       <ul>

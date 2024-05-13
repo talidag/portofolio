@@ -7,14 +7,7 @@ import discord from "../../../assets/icons/discord.svg";
 import FooterSocial from "../../atoms/FooterSocial";
 
 const Footer = () => {
-  const links = [
-    "Home",
-    "About",
-    "Skills",
-    "Projects",
-    "Testimonials",
-    "Contact",
-  ];
+  const links = ["Home", "About", "Skills", "Projects", "Contact"];
 
   const socialLinks = [
     {
@@ -31,7 +24,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer>
+    <footer id="contact">
       <div className="footer__links">
         {links.map((link, index) => (
           <NavEl key={index} link={link} index={index} />
