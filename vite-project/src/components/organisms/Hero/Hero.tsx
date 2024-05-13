@@ -15,7 +15,7 @@ const Hero = () => {
   ];
 
   return (
-    <main>
+    <main id="home">
       <div className="images">
         <img src={heroVector} alt="splash of color" className="hero-vector" />
         <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />

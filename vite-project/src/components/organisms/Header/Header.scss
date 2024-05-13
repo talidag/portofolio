@@ -4,8 +4,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 0.8rem;
+  padding-top: 0.8rem;
   padding-right: 8rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  padding-bottom: 1rem;
+  z-index: 99;
 }
 
 nav {
@@ -14,6 +20,14 @@ nav {
     gap: 3.2rem;
     list-style: none;
   }
+}
+
+.burger__menu {
+  display: none;
+}
+
+.close__menu {
+  display: none;
 }
 
 .nav-el {
@@ -56,5 +70,47 @@ nav {
     &::first-letter {
       font-size: 2.8rem;
     }
+  }
+}
+
+@media (max-width: $tablet) {
+  nav ul {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav__links.active {
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: $white;
+    top: 9.8rem;
+    width: 100vw;
+    height: 40vh;
+    left: 0;
+    font-size: 2.4rem;
+    padding-top: 4rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .burger__menu,
+  .close__menu.active {
+    display: block;
+  }
+
+  .burger__menu,
+  .close__menu {
+    height: 3.5rem;
+    cursor: pointer;
+  }
+
+  .burger__menu.hide,
+  .close__menu {
+    display: none;
   }
 }

@@ -149,10 +149,57 @@ main {
 
 @media (max-width: $laptop) {
   .images {
-    transform: scale(0.7);
+    transform: scale(0.6);
     position: absolute;
-    bottom: -280rem;
-    right: 12rem;
     z-index: -1;
+  }
+}
+
+@media (max-width: 948px) {
+  main {
+    margin-bottom: 20rem;
+  }
+  .images {
+    transform: scale(0.6);
+    position: absolute;
+    z-index: -1;
+    bottom: -160rem;
+    right: calc(100% - 600px);
+  }
+
+  .hero-vector {
+    display: none;
+  }
+}
+
+@media (max-width: 706px) {
+  main {
+    margin-bottom: 20rem;
+    padding-right: 10rem;
+  }
+  .main-left__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .images {
+    transform: scale(0.6);
+    position: absolute;
+    z-index: -1;
+    bottom: -230rem;
+    right: 40px;
+  }
+
+  .hero-vector {
+    display: none;
+  }
+}
+
+@media (max-width: 465px) {
+  .images {
+    transform: scale(0.6);
+    position: absolute;
+    z-index: -1;
+    bottom: -280rem;
+    right: -30px;
   }
 }
