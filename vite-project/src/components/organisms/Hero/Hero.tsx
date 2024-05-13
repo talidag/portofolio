@@ -16,7 +16,10 @@ const Hero = () => {
 
   return (
     <main>
-      <img src={heroVector} alt="splash of color" className="hero-vector" />
+      <div className="images">
+        <img src={heroVector} alt="splash of color" className="hero-vector" />
+        <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />
+      </div>
       <div className="main-left">
         <p>Hello, my name is</p>
         <h1>TALIDA GANCIU</h1>
@@ -57,7 +60,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />
     </main>
   );
 };

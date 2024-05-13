@@ -10,6 +10,7 @@
   letter-spacing: 0.6px;
   padding: 8.8rem 36rem 10rem 36rem;
   position: relative;
+  text-align: center;
 
   &__list {
     display: flex;
@@ -27,11 +28,13 @@
     position: absolute;
     left: 0;
     top: 5rem;
+    z-index: -2;
   }
   &__vector-right {
     position: absolute;
     right: 0;
     top: -15rem;
+    z-index: -2;
   }
 }
 
@@ -44,5 +47,47 @@
 
   & img {
     height: 5.6rem;
+  }
+}
+
+@media (max-width: $desktop) {
+  .skills {
+    padding: 8.8rem 20rem;
+    z-index: 3;
+
+    &__vector-right {
+      transform: scale(0.8);
+    }
+    &__vector-left {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .skills {
+    padding: 8.8rem 10rem;
+
+    &__vector-right {
+      transform: scale(0.6);
+    }
+    &__vector-left {
+      transform: scale(0.4);
+      top: 12rem;
+      left: -10rem;
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .skills {
+    padding: 8.8rem 5rem;
+
+    &__vector-right {
+      transform: scale(0.3);
+    }
+    &__vector-left {
+      transform: scale(0.3);
+    }
   }
 }

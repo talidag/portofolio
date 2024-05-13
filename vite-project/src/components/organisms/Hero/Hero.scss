@@ -1,138 +1,158 @@
 @import "../../../scss/variables";
 
 .hero-vector {
-    position: absolute;
-    top: -15rem;
-    right: 0;
-    z-index: -3;
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  z-index: -3;
 }
 
 main {
-    position: relative;
-    padding: 17.4rem 0 12.8rem 8rem;
+  position: relative;
+  padding: 17.4rem 0 12.8rem 8rem;
 }
 
 .other-job {
-    transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .main {
-    &-left {
-        display: flex;
-        flex-direction: column;
-        gap: 2.4rem;
+  &-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
 
-        & p {
-            font-size: 2rem;
-            letter-spacing: 1.4px;
+    & p {
+      font-size: 2rem;
+      letter-spacing: 1.4px;
 
-            & span {
-                font-weight: 600;
-            }
-        }
-
-        & h1 {
-            font-size: 6rem;
-            font-weight: 600;
-        }
-
-        &__buttons {
-            display: flex;
-            gap: 2.4rem;
-        }
+      & span {
+        font-weight: 600;
+      }
     }
+
+    & h1 {
+      font-size: 6rem;
+      font-weight: 600;
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 2.4rem;
+    }
+  }
 }
 
 .other-job {
-    font-weight: 600;
-    overflow: hidden;
-    height: 40px;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
 
-    &__p {
-        display: flex;
-        align-items: center;
-        gap: 1.4rem;
-        padding-top: 1.4rem;
+  &__p {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    padding-top: 1.4rem;
+  }
+
+  &__container {
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 16s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+
+    &__item {
+      line-height: 40px;
     }
-
-    &__container {
-        -webkit-animation-name: change;
-        -webkit-animation-duration: 16s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: change;
-        animation-duration: 16s;
-        animation-iteration-count: infinite;
-
-        &__item {
-            line-height: 40px;
-        }
-    }
+  }
 }
 
 @keyframes change {
-    0%,
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-    12.5%,
-    25% {
-        transform: translate3d(0, -12.5%, 0);
-    }
-    25%,
-    37.5% {
-        transform: translate3d(0, -25%, 0);
-    }
-    37.5%,
-    50% {
-        transform: translate3d(0, -37.5%, 0);
-    }
-    50%,
-    62.5% {
-        transform: translate3d(0, -50%, 0);
-    }
-    62.5%,
-    75% {
-        transform: translate3d(0, -62.5%, 0);
-    }
-    75%,
-    87.5% {
-        transform: translate3d(0, -75%, 0);
-    }
-    87.5%,
-    99.9% {
-        transform: translate3d(0, -87.5%, 0);
-    }
-    99.9%,
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  12.5%,
+  25% {
+    transform: translate3d(0, -12.5%, 0);
+  }
+  25%,
+  37.5% {
+    transform: translate3d(0, -25%, 0);
+  }
+  37.5%,
+  50% {
+    transform: translate3d(0, -37.5%, 0);
+  }
+  50%,
+  62.5% {
+    transform: translate3d(0, -50%, 0);
+  }
+  62.5%,
+  75% {
+    transform: translate3d(0, -62.5%, 0);
+  }
+  75%,
+  87.5% {
+    transform: translate3d(0, -75%, 0);
+  }
+  87.5%,
+  99.9% {
+    transform: translate3d(0, -87.5%, 0);
+  }
+  99.9%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .btn-el {
-    padding: 1.6rem 3.2rem;
-    text-transform: uppercase;
-    border-radius: 2.4rem;
-    font-size: 1.8rem;
-    font-weight: 400;
-    cursor: pointer;
+  padding: 1.6rem 3.2rem;
+  text-transform: uppercase;
+  border-radius: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
 
-    &.connect {
-        background-color: $yellow;
-        border: none;
+  &.connect {
+    background-color: $yellow;
+    border: none;
 
-        &:hover {
-            background-color: #777777;
-            color: $white;
-        }
+    &:hover {
+      background-color: #777777;
+      color: $white;
     }
+  }
 
-    &.media {
-        background: none;
-    }
+  &.media {
+    background: none;
+  }
 }
 
 .main-img {
+  position: absolute;
+  top: 13.5rem;
+  right: 7rem;
+}
+
+@media (max-width: $desktop) {
+  .images {
+    transform: scale(0.8);
     position: absolute;
-    top: 13.5rem;
-    right: 7rem;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (max-width: $laptop) {
+  .images {
+    transform: scale(0.7);
+    position: absolute;
+    bottom: -280rem;
+    right: 12rem;
+    z-index: -1;
+  }
 }

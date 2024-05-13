@@ -18,3 +18,10 @@
     letter-spacing: 0.6px;
   }
 }
+
+@media (max-width: $desktop) {
+  .about {
+    padding: 17.6rem 10rem 8.8rem 10rem;
+    z-index: 5;
+  }
+}

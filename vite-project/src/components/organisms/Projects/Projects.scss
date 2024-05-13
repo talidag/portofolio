@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+  width: 35rem;
 
   &:hover img {
     transition: all 0.8s ease;
@@ -40,6 +41,13 @@
   &__description {
     font-size: 1.6rem;
     text-align: center;
-    padding: 0 3rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: $desktop) {
+  .projects__all {
+    flex-direction: column;
+    justify-content: center;
   }
 }
