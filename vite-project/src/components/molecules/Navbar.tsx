@@ -37,6 +37,7 @@ const Navbar = () => {
             key={index}
             link={link}
             index={index}
+            clickedItem={clickedItem}
             setClickedItem={setClickedItem}
             setClickMenuMobile={setClickMenuMobile}
           />

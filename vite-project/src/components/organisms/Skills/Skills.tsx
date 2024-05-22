@@ -7,9 +7,7 @@ import react from "../../../assets/icons/react.svg";
 import js from "../../../assets/icons/js.svg";
 import ts from "../../../assets/icons/ts.svg";
 import github from "../../../assets/icons/github.svg";
-import restful from "../../../assets/icons/restful.svg";
-import cmd from "../../../assets/icons/cmd.svg";
-import responsive from "../../../assets/icons/resposive.svg";
+import tailwind from "../../../assets/icons/tailwind.svg";
 import vectorLeft from "../../../assets/skills-vector-left.svg";
 import vectorRight from "../../../assets/skills-vector-right.svg";
 import SkillEl from "../../atoms/SkillEl";
@@ -29,6 +27,11 @@ const Skills = () => {
       icon: sass,
     },
     {
+      name: "Tailwind",
+      icon: tailwind,
+    },
+
+    {
       name: "React",
       icon: react,
     },
@@ -43,18 +46,6 @@ const Skills = () => {
     {
       name: "Github",
       icon: github,
-    },
-    {
-      name: "RESTful APIs",
-      icon: restful,
-    },
-    {
-      name: "Command Line",
-      icon: cmd,
-    },
-    {
-      name: "Responsive Designs",
-      icon: responsive,
     },
   ];
 
@@ -81,6 +72,12 @@ const Skills = () => {
         alt="splash of color"
         className="skills__vector-right"
       />
+      <p className="skills-ps">
+        PS: Before I entered the tech industry, I was a stay-at-home mom,
+        skillfully juggling code and diapers. This unique chapter of my life
+        taught me invaluable lessons in patience, creativity, and multitasking —
+        skills that I bring to every project I work on.
+      </p>
     </section>
   );
 };

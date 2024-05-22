@@ -1,15 +1,11 @@
 @import "../../../scss/variables";
 
-.hero-vector {
-  position: absolute;
-  top: -15rem;
-  right: 0;
-  z-index: -3;
-}
-
 main {
-  position: relative;
-  padding: 17.4rem 0 12.8rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.4rem calc((100vw - 1440px) / 2);
+  padding-bottom: 1.2rem;
 }
 
 .other-job {
@@ -63,8 +59,13 @@ main {
     animation-duration: 16s;
     animation-iteration-count: infinite;
 
+    display: flex;
+    flex-direction: column;
+    animation: change 16s linear infinite;
+
     &__item {
       line-height: 40px;
+      height: 40px;
     }
   }
 }
@@ -115,60 +116,31 @@ main {
   font-size: 1.8rem;
   font-weight: 400;
   cursor: pointer;
+  border: 1px solid $yellow;
 
   &.connect {
     background-color: $yellow;
-    border: none;
-
-    &:hover {
-      background-color: #777777;
-      color: $white;
-    }
   }
 
   &.media {
-    background: none;
+    background: white;
   }
-}
-
-.main-img {
-  position: absolute;
-  top: 13.5rem;
-  right: 7rem;
+  &:hover {
+    background-color: #ffeec4;
+    border: 1px solid $yellow;
+    transition: background-color 0.7s ease-in-out;
+  }
 }
 
 @media (max-width: $desktop) {
-  .images {
-    transform: scale(0.8);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-  }
 }
 
 @media (max-width: $laptop) {
-  .images {
-    transform: scale(0.6);
-    position: absolute;
-    z-index: -1;
-  }
 }
 
 @media (max-width: 948px) {
   main {
     margin-bottom: 20rem;
-  }
-  .images {
-    transform: scale(0.6);
-    position: absolute;
-    z-index: -1;
-    bottom: -160rem;
-    right: calc(100% - 600px);
-  }
-
-  .hero-vector {
-    display: none;
   }
 }
 
@@ -181,25 +153,7 @@ main {
     flex-direction: column;
     align-items: center;
   }
-  .images {
-    transform: scale(0.6);
-    position: absolute;
-    z-index: -1;
-    bottom: -230rem;
-    right: 40px;
-  }
-
-  .hero-vector {
-    display: none;
-  }
 }
 
 @media (max-width: 465px) {
-  .images {
-    transform: scale(0.6);
-    position: absolute;
-    z-index: -1;
-    bottom: -280rem;
-    right: -30px;
-  }
 }

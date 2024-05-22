@@ -8,22 +8,22 @@ const AboutMe = () => {
       <div className="about__text">
         <p>Hey there!</p>
         <p>
-          I'm a self-taught frontend developer, previously juggling code and
-          diapers as a stay-at-home mom.
+          I'm a frontend developer with a passion for design and a love for
+          turning ideas into stunning, user-friendly websites. My journey into
+          the world of coding began with learning Python, but it didn't take
+          long for me to discover my true love for frontend development.
         </p>
         <p>
-          My working journey began in a call center, where I witnessed firsthand
-          people's tech struggles, especially among the elderly. This experience
-          motivated me to start my coding adventure.
+          Frontend development is my canvas, and I am the artist. With a touch
+          of wizardry and a sprinkle of magic, I transform code into captivating
+          digital experiences.
         </p>
         <p>
-          My journey began with VBA programming, but my passion for visual
-          elements led me to frontend.
+          Accessibility is at the heart of everything I build because I believe
+          that the web should be a place where everyone can explore and engage
+          without barriers.
         </p>
-        <p>
-          I'm dedicated to making the internet a better place for everyone,
-          especially those who need it most.
-        </p>
+        <p>Let's connect and create something amazing together! ⭐</p>
       </div>
     </section>
   );

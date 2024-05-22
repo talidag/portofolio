@@ -13,11 +13,10 @@
   text-align: center;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5.6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5rem;
   }
 
   &__current {
@@ -35,6 +34,10 @@
     right: 0;
     top: -15rem;
     z-index: -2;
+  }
+
+  &-ps {
+    width: 75rem;
   }
 }
 

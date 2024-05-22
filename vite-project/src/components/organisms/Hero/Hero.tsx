@@ -1,6 +1,5 @@
 import "./Hero.scss";
-import heroVector from "../../../assets/hero-vector.svg";
-import heroImg from "../../../assets/hero-img.png";
+import heroImg from "../../../assets/hero-img.svg";
 
 const Hero = () => {
   const otherJobs = [
@@ -16,17 +15,13 @@ const Hero = () => {
 
   return (
     <main id="home">
-      <div className="images">
-        <img src={heroVector} alt="splash of color" className="hero-vector" />
-        <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />
-      </div>
       <div className="main-left">
         <p>Hello, my name is</p>
         <h1>TALIDA GANCIU</h1>
         <div className="main-left__description">
           <p>
             I'm a <span>Frontend Developer</span> with a passion for
-            <span> Design</span>
+            <span> design</span>
           </p>
           <p className="other-job__p">
             and a
@@ -59,6 +54,9 @@ const Hero = () => {
             <button className="btn-el media">Linkedin</button>
           </a>
         </div>
+      </div>
+      <div className="images">
+        <img src={heroImg} alt="Talida Ganciu photo" className="main-img" />
       </div>
     </main>
   );
