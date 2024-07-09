@@ -3,8 +3,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 0.8rem;
-  padding-right: 8rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-bottom: 1rem;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 0.8rem calc((100vw - 1440px) / 2);
 }
 
 nav ul {
@@ -13,9 +18,17 @@ nav ul {
   list-style: none;
 }
 
+.burger__menu {
+  display: none;
+}
+
+.close__menu {
+  display: none;
+}
+
 .nav-el__number {
   font-family: "Licorice";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .nav-el__link {
   text-transform: uppercase;
@@ -25,9 +38,13 @@ nav ul {
   flex-direction: column;
   letter-spacing: 1.6px;
 }
-.nav-el:hover .nav-el__number {
-  font-weight: 700;
-  color: #ffffff;
+.nav-el:hover .nav-el__link {
+  text-shadow: 0px 0px 1.2px black;
+  transition: text-shadow 0.4s ease;
+}
+
+.clicked-element .nav-el__link {
+  border-bottom: 2px solid #ffc637;
 }
 
 .heading-el {
@@ -47,4 +64,79 @@ nav ul {
 }
 .heading-el__text::first-letter {
   font-size: 2.8rem;
+}
+
+.header__socials {
+  display: flex;
+  gap: 1.4rem;
+}
+.header__socials a img:hover {
+  filter: invert(57%) sepia(73%) saturate(2107%) hue-rotate(14deg) brightness(106%) contrast(101%);
+  animation: shake 0.5s;
+  animation-iteration-count: 1.5;
+}
+
+.home-logo:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1.5;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@media (max-width: 768px) {
+  .header__socials {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .nav__links.active {
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: #ffffff;
+    top: 9.8rem;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    font-size: 2.4rem;
+    padding-top: 4rem;
+    align-items: center;
+    text-align: center;
+  }
+  .burger__menu,
+  .close__menu.active {
+    display: block;
+  }
+  .burger__menu,
+  .close__menu {
+    height: 3.5rem;
+    cursor: pointer;
+  }
+  .burger__menu.hide,
+  .close__menu {
+    display: none;
+  }
 }/*# sourceMappingURL=Header.css.map */

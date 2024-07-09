@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Licorice&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.hero-vector {
-  position: absolute;
-  top: -15rem;
-  right: 0;
-  z-index: -3;
-}
-
 main {
-  position: relative;
-  padding: 17.4rem 0 12.8rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.4rem calc((100vw - 1440px) / 2);
+  padding-bottom: 1.2rem;
 }
 
 .other-job {
@@ -54,9 +50,13 @@ main {
   animation-name: change;
   animation-duration: 16s;
   animation-iteration-count: infinite;
+  display: flex;
+  flex-direction: column;
+  animation: change 16s linear infinite;
 }
 .other-job__container__item {
   line-height: 40px;
+  height: 40px;
 }
 
 @keyframes change {
@@ -95,21 +95,32 @@ main {
   font-size: 1.8rem;
   font-weight: 400;
   cursor: pointer;
+  border: 1px solid #ffc637;
 }
 .btn-el.connect {
   background-color: #ffc637;
-  border: none;
-}
-.btn-el.connect:hover {
-  background-color: #777777;
-  color: #ffffff;
 }
 .btn-el.media {
-  background: none;
+  background: white;
+}
+.btn-el:hover {
+  background-color: #ffeec4;
+  border: 1px solid #ffc637;
+  transition: background-color 0.7s ease-in-out;
 }
 
-.main-img {
-  position: absolute;
-  top: 13.5rem;
-  right: 7rem;
+@media (max-width: 948px) {
+  main {
+    margin-bottom: 20rem;
+  }
+}
+@media (max-width: 706px) {
+  main {
+    margin-bottom: 20rem;
+    padding-right: 10rem;
+  }
+  .main-left__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=Hero.css.map */

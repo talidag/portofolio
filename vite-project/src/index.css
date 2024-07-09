@@ -15,7 +15,6 @@ html {
 body {
   overflow-x: hidden;
   cursor: default;
-  /* max-width: 1440px; */
   margin: 0 auto;
   font-family: "Roboto";
 }
@@ -29,4 +28,4 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
