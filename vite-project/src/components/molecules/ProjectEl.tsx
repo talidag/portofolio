@@ -4,7 +4,7 @@ interface ProjectElProps {
   name: string;
   img: string;
   text: string;
-  link: string;
+  link?: string;
 }
 const ProjectEl = ({ name, img, text, link }: ProjectElProps) => {
   return (
